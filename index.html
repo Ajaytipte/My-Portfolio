@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajay Tipte - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!-- Navigation -->
+    <nav class="bg-black border-b border-gray-800 fixed w-full z-10">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+            <div>
+              <a href="#" class="flex items-center py-4 px-2">
+                <span class="font-bold text-white text-2xl">Ajay Tipte</span>
+              </a>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href="#home"
+              class="py-4 px-2 text-white font-semibold hover:text-yellow-400 transition duration-300"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="py-4 px-2 text-gray-400 font-semibold hover:text-yellow-400 transition duration-300"
+              >About</a
+            >
+            <a
+              href="#resume"
+              class="py-4 px-2 text-gray-400 font-semibold hover:text-yellow-400 transition duration-300"
+              >Resume</a
+            >
+            <a
+              href="#projects"
+              class="py-4 px-2 text-gray-400 font-semibold hover:text-yellow-400 transition duration-300"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="py-4 px-2 text-gray-400 font-semibold hover:text-yellow-400 transition duration-300"
+              >Contact</a
+            >
+            <a
+              href="#message"
+              class="py-4 px-2 text-gray-400 font-semibold hover:text-yellow-400 transition duration-300"
+              >Message me</a
+            >
+          </div>
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <!-- Hamburger icon -->
+              <svg
+                class="w-6 h-6 text-gray-400 hover:text-yellow-400 block"
+                id="hamburger-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+
+              <!-- Close icon -->
+              <svg
+                class="w-6 h-6 text-gray-400 hover:text-yellow-400 hidden"
+                id="close-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li>
+            <a
+              href="#home"
+              class="block text-sm px-2 py-4 hover:bg-gray-800 hover:text-yellow-400 transition duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="block text-sm px-2 py-4 hover:bg-gray-800 hover:text-yellow-400 transition duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#resume"
+              class="block text-sm px-2 py-4 hover:bg-gray-800 hover:text-yellow-400 transition duration-300"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="block text-sm px-2 py-4 hover:bg-gray-800 hover:text-yellow-400 transition duration-300"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block text-sm px-2 py-4 hover:bg-gray-800 hover:text-yellow-400 transition duration-300"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#message"
+              class="block text-sm px-2 py-4 hover:bg-gray-800 hover:text-yellow-400 transition duration-300"
+              >Message me</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="pt-24 pb-12 px-4 bg-black">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">I'm Ajay Tipte</h2>
+            <div class="text-2xl md:text-3xl mb-6">
+              <!-- <span class="font-bold text-yellow-400">Cloud Enthusiastic</span> -->
+              <span id="typing-animation" class="text-white"></span>
+            </div>
+            <div class="flex space-x-4">
+              <a
+                href="#resume"
+                class="bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transition duration-300"
+                >MY RESUME</a
+              >
+              <a
+                href="https://www.linkedin.com/in/ajay-tipte/"
+                target="_blank"
+                class="border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-full font-semibold hover:bg-gray-900 transition duration-300"
+                >MY LINKEDIN</a
+              >
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div>
+              <img
+                src="assets/me.png"
+                alt=""
+                class="w-64 md:w-96 lg:w-[12000px] lg:h-[800px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-black">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-white mb-2">About Me</h2>
+        <div
+          class="h-1 w-full bg-gradient-to-r from-gray-400 via-yellow-400 to-yellow-700 mb-12"
+        ></div>
+
+        <div class="flex flex-col md:flex-row">
+          <!-- LEFT COLUMN -->
+          <div class="md:w-1/2 md:pr-8 mb-12 md:mb-0">
+            <!-- Name & Location -->
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-user text-yellow-400 text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white">Ajay Tipte</h3>
+                <p class="text-yellow-400">Software Developer</p>
+              </div>
+            </div>
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-map-marker-alt text-yellow-400 text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white">Address</h3>
+                <p class="text-gray-300">Pune, Maharashtra</p>
+              </div>
+            </div>
+
+            <!-- About Me Paragraph -->
+            <h3 class="text-xl font-semibold mb-4 text-white">About Me</h3>
+            <p class="text-gray-300 mb-6">
+              I am a Computer Engineering student from Dr. D. Y. Patil College
+              of Engineering & Innovation, Pune. I am a passionate and
+              enthusiastic learner with a strong interest in cloud computing,
+              software development, and emerging technologies. Proficient in
+              programming languages like Java and Python, I am eager to explore
+              scalable cloud-based solutions and contribute to impactful
+              projects. My goal is to apply my technical knowledge to solve
+              real-world problems and grow as a cloud and software engineering
+              professional.
+            </p>
+            <a
+              href="https://www.geeksforgeeks.org/user/tiptercnc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-transparent border-2 border-yellow-400 text-yellow-400 font-semibold px-8 py-3 rounded-full hover:bg-yellow-400 hover:text-black transition duration-300 shadow-md w-48 text-center"
+            >
+              DSA
+            </a>
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="md:w-1/2">
+            <h3 class="text-xl font-semibold mb-4 text-white">Skills</h3>
+            <div class="space-y-4 mb-6">
+              <!-- Repeat for each skill -->
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-gray-300 flex items-center">
+                    <i class="fab fa-html5 text-yellow-400 mr-2"></i> HTML
+                  </span>
+                  <span class="text-gray-300">99%</span>
+                </div>
+                <div class="w-full bg-gray-800 rounded-full h-2.5">
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 99%"
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-gray-300 flex items-center">
+                    <i class="fab fa-css3-alt text-yellow-400 mr-2"></i> CSS
+                  </span>
+                  <span class="text-gray-300">75%</span>
+                </div>
+                <div class="w-full bg-gray-800 rounded-full h-2.5">
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-gray-300 flex items-center">
+                    <i class="fab fa-js-square text-yellow-400 mr-2"></i>
+                    JavaScript
+                  </span>
+                  <span class="text-gray-300">50%</span>
+                </div>
+                <div class="w-full bg-gray-800 rounded-full h-2.5">
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 50%"
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-gray-300 flex items-center">
+                    <i class="fab fa-java text-yellow-400 mr-2"></i> Java
+                  </span>
+                  <span class="text-gray-300">90%</span>
+                </div>
+                <div class="w-full bg-gray-800 rounded-full h-2.5">
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-gray-300 flex items-center">
+                    <i class="fab fa-python text-yellow-400 mr-2"></i> Python
+                  </span>
+                  <span class="text-gray-300">50%</span>
+                </div>
+                <div class="w-full bg-gray-800 rounded-full h-2.5">
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 50%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-gray-300 flex items-center">
+                    <i class="fas fa-database text-yellow-400 mr-2"></i> SQL
+                  </span>
+                  <span class="text-gray-300">70%</span>
+                </div>
+                <div class="w-full bg-gray-800 rounded-full h-2.5">
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-gray-300 flex items-center">
+                    <i class="fas fa-leaf text-yellow-400 mr-2"></i> MongoDB
+                  </span>
+                  <span class="text-gray-300">60%</span>
+                </div>
+                <div class="w-full bg-gray-800 rounded-full h-2.5">
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 60%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Skills -->
+            <h3 class="text-xl font-semibold mb-4 text-white">
+              Tools & Technologies
+            </h3>
+
+            <!-- DevOps Tools -->
+            <div class="mb-6">
+              <h4 class="text-lg font-bold text-yellow-400 mb-2">Cloud</h4>
+              <div class="flex flex-wrap gap-4">
+                <span
+                  class="flex items-center gap-2 bg-gray-800 px-6 py-2 rounded-full text-sm text-white border border-transparent hover:border-yellow-400 transition duration-300"
+                >
+                  <i class="fab fa-aws text-orange-400"></i> AWS
+                </span>
+                <span
+                  class="flex items-center gap-2 bg-gray-800 px-6 py-2 rounded-full text-sm text-white border border-transparent hover:border-yellow-400 transition duration-300"
+                >
+                  <i class="fab fa-docker text-blue-400"></i> Docker
+                </span>
+                <span
+                  class="flex items-center gap-2 bg-gray-800 px-6 py-2 rounded-full text-sm text-white border border-transparent hover:border-yellow-400 transition duration-300"
+                >
+                  <i class="fab fa-kubernetes text-blue-300"></i> Kubernetes
+                </span>
+              </div>
+            </div>
+
+            <!-- Development Tools -->
+            <div class="mb-6">
+              <h4 class="text-lg font-bold text-yellow-400 mb-2">
+                Development Tools
+              </h4>
+              <div class="flex flex-wrap gap-4">
+                <span
+                  class="flex items-center gap-2 bg-gray-800 px-6 py-2 rounded-full text-sm text-white border border-transparent hover:border-yellow-400 transition duration-300"
+                >
+                  <i class="fas fa-code text-green-400"></i> VS Code
+                </span>
+                <span
+                  class="flex items-center gap-2 bg-gray-800 px-6 py-2 rounded-full text-sm text-white border border-transparent hover:border-yellow-400 transition duration-300"
+                >
+                  <i class="fab fa-git-alt text-red-500"></i> Git
+                </span>
+                <span
+                  class="flex items-center gap-2 bg-gray-800 px-6 py-2 rounded-full text-sm text-white border border-transparent hover:border-yellow-400 transition duration-300"
+                >
+                  <i class="fab fa-github text-white"></i> GitHub
+                </span>
+              </div>
+            </div>
+
+            <!-- Operating Systems -->
+            <div class="mb-8">
+              <h4 class="text-lg font-bold text-yellow-400 mb-2">
+                Operating Systems
+              </h4>
+              <div class="flex flex-wrap gap-4">
+                <span
+                  class="flex items-center gap-2 bg-gray-800 px-6 py-2 rounded-full text-sm text-white border border-transparent hover:border-yellow-400 transition duration-300"
+                >
+                  <i class="fab fa-linux text-gray-300"></i> Linux
+                </span>
+                <span
+                  class="flex items-center gap-2 bg-gray-800 px-6 py-2 rounded-full text-sm text-white border border-transparent hover:border-yellow-400 transition duration-300"
+                >
+                  <i class="fab fa-windows text-blue-500"></i> Windows
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section id="certifications" class="py-12 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-yellow-400 mb-2 text-center">
+          Certifications
+        </h2>
+        <div
+          class="h-1 w-full bg-gradient-to-r from-gray-400 via-yellow-400 to-yellow-700 mb-8"
+        ></div>
+
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Certification Card 1 -->
+          <div
+            class="bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-transparent hover:border-yellow-400 transition duration-300"
+          >
+            <h3 class="text-xl font-semibold text-white mb-2">
+              [NEW] Ultimate AWS Certified Cloud Practitioner CLF-C02 (2025)
+            </h3>
+            <p class="text-gray-400 text-sm mb-3">
+              Udemy - Issued March 15, 2025
+            </p>
+            <a
+              href="http://ude.my/UC-f910b634-b2ab-461b-b36e-4ba849e1854f"
+              target="_blank"
+              class="text-yellow-400 hover:underline"
+              >View Credential</a
+            >
+          </div>
+
+          <!-- Certification Card 2 -->
+          <div
+            class="bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-transparent hover:border-yellow-400 transition duration-300"
+          >
+            <h3 class="text-xl font-semibold text-white mb-2">
+              Crash Course on Python
+            </h3>
+            <p class="text-gray-400 text-sm mb-3">
+              Google - Issued July 28, 2024
+            </p>
+            <a
+              href="https://www.coursera.org/account/accomplishments/records/R87QD8UKU8K2"
+              target="_blank"
+              class="text-yellow-400 hover:underline"
+              >View Credential</a
+            >
+          </div>
+
+          <!-- Certification Card 3 -->
+          <div
+            class="bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-transparent hover:border-yellow-400 transition duration-300"
+          >
+            <h3 class="text-xl font-semibold text-white mb-2">
+              Fundamentals of Java Programming
+            </h3>
+            <p class="text-gray-400 text-sm mb-3">
+              Coursera - Issued January 22, 2025
+            </p>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/KE6N5W0DFNUJ"
+              target="_blank"
+              class="text-yellow-400 hover:underline"
+              >View Credential</a
+            >
+          </div>
+          <!-- Certification Card 4 -->
+          <div
+            class="bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-transparent hover:border-yellow-400 transition duration-300"
+          >
+            <h3 class="text-xl font-semibold text-white mb-2">
+              Docker and Kubernetes: The Complete Course from Zero to Hero
+            </h3>
+            <p class="text-gray-400 text-sm mb-3">
+              Udemy - Issued June 1, 2025
+            </p>
+            <a href="#" target="_blank" class="text-yellow-400 hover:underline"
+              >View Credential</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-16 px-4 bg-black">
+      <div class="max-w-6xl mx-auto">
+        <!-- Resume Heading -->
+        <h2 class="text-3xl font-bold text-center text-white mb-2">Resume</h2>
+        <div
+          class="h-1 w-full bg-gradient-to-r from-gray-400 via-yellow-400 to-yellow-700"
+        ></div>
+
+        <!-- View Resume Button Outside the Box -->
+        <div class="flex justify-center mb-12 mt-12">
+          <a
+            href="assets/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 inline-flex items-center"
+          >
+            <i class="fas fa-eye mr-2"></i> DOWNLOAD CV
+          </a>
+        </div>
+
+        <!-- Education Heading with Golden Underline -->
+        <!-- Education Heading with Full Gradient Underline -->
+        <div class="text-center mb-8">
+          <h3 class="text-3xl font-bold text-white mb-2">Education</h3>
+          <div
+            class="h-1 w-full bg-gradient-to-r from-gray-400 via-yellow-400 to-yellow-700"
+          ></div>
+        </div>
+
+        <!-- Education Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Box 1 -->
+          <div
+            class="bg-gray-900 p-6 rounded-lg border border-gray-800 hover:border-yellow-400 transition duration-300"
+          >
+            <div class="flex items-start">
+              <div class="bg-gray-800 p-3 rounded-full mr-4">
+                <i class="fas fa-graduation-cap text-yellow-400"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg mb-1 text-white">2021-2022</h4>
+                <p class="font-semibold text-yellow-400 mb-1">
+                  Higher Secondary School
+                </p>
+                <p class="text-gray-400 mb-2">
+                  Acharya Marathe College in Mumbai, Maharashtra
+                </p>
+                <p class="text-gray-400">Grade: First class distinction.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 2 -->
+          <div
+            class="bg-gray-900 p-6 rounded-lg border border-gray-800 hover:border-yellow-400 transition duration-300"
+          >
+            <div class="flex items-start">
+              <div class="bg-gray-800 p-3 rounded-full mr-4">
+                <i class="fas fa-university text-yellow-400"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg mb-1 text-white">2022-2026</h4>
+                <p class="font-semibold text-yellow-400 mb-1">
+                  Bachelor of Computer Engineering
+                </p>
+                <p class="text-gray-400 mb-2">
+                  Savitribai Phule Pune University
+                </p>
+                <p class="text-gray-400">Grade: Pursuing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 bg-black">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-2 text-white">Projects</h2>
+        <div
+          class="h-1 w-full bg-gradient-to-r from-gray-400 via-yellow-400 to-yellow-700 mb-10"
+        ></div>
+        <p class="text-center text-gray-400 mb-12">
+          Below are the sample Web Development projects.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-yellow-400 transition duration-300"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-3 text-white">
+                Prescripto: Doctor Appointment Booking System
+              </h3>
+              <p class="text-gray-400 mb-2">
+                <strong>Tech Stack:</strong> MERN, Tailwind CSS, JWT,
+                Cloudinary, Razorpay, Stripe
+              </p>
+              <p class="text-gray-400">
+                <strong>Description:</strong> A full-stack doctor appointment
+                platform featuring secure authentication, doctor management,
+                online payments, and dedicated admin & doctor dashboards.
+              </p>
+              <a
+                href="https://github.com/Ajaytipte/Prescripto-MERN"
+                target="_blank"
+                class="inline-block px-4 mt-6 py-2 border border-yellow-500 text-yellow-500 rounded hover:bg-yellow-500 hover:text-black transition"
+              >
+                View
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-yellow-400 transition duration-300"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-3 text-white">
+                My Portfolio Website
+              </h3>
+              <p class="text-gray-400 mb-2">
+                <strong>Tech Stack:</strong> HTML, CSS & JavaScript 
+              </p>
+              <p class="text-gray-400">
+                <strong>Description:</strong> I made my own portfolio website to show my projects and skills. It works well on mobile and is easy to use
+              </p>
+              <a
+                href="https://github.com/Ajaytipte/Prescripto-MERN"
+                target="_blank"
+                class="inline-block px-4 mt-6 py-2 border border-yellow-500 text-yellow-500 rounded hover:bg-yellow-500 hover:text-black transition"
+              >
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Github Section -->
+      <section
+        class="flex flex-col items-center justify-center text-center px-4 bg-cover bg-center mt-8"
+        style="background-image: url('/assets/bg_1.jpg'); height: 50vh"
+      >
+        <h1 class="text-white text-4xl md:text-5xl font-extrabold mb-6">
+          Here's my
+        </h1>
+
+        <a
+          href="https://github.com/Ajaytipte"
+          target="_blank"
+          class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-10 rounded-full transition duration-300 text-sm md:text-base"
+        >
+          GITHUB
+        </a>
+
+        <p class="text-white text-lg md:text-xl mt-6 font-medium">
+          I love to code & create awesome Software.
+        </p>
+      </section>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-black">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-2 text-white">
+          Contact Me
+        </h2>
+        <div
+          class="h-1 w-full bg-gradient-to-r from-gray-400 via-yellow-400 to-yellow-700 mb-10"
+        ></div>
+        <p class="text-center text-gray-400 mb-12">
+          Below are the details to reach out to me!
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-900 p-8 rounded-lg border border-gray-800">
+            <div class="mb-6">
+              <h3
+                class="text-xl font-semibold mb-4 flex items-center text-yellow-400"
+              >
+                <i class="fas fa-map-marker-alt mr-2"></i> ADDRESS
+              </h3>
+              <p class="text-gray-300">Pune, Maharashtra</p>
+            </div>
+            <div class="mb-6">
+              <h3
+                class="text-xl font-semibold mb-4 flex items-center text-yellow-400"
+              >
+                <i class="fas fa-phone-alt mr-2"></i> CONTACT NUMBER
+              </h3>
+              <p class="text-gray-300">+19 93250404</p>
+            </div>
+            <div class="mb-6">
+              <h3
+                class="text-xl font-semibold mb-4 flex items-center text-yellow-400"
+              >
+                <i class="fas fa-envelope mr-2"></i> EMAIL ADDRESS
+              </h3>
+              <p class="text-gray-300">tipteajay@gmail.com</p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-500 transition duration-300 inline-flex items-center"
+              >
+                <i class="fas fa-download mr-2"></i> DOWNLOAD RESUME
+              </a>
+            </div>
+          </div>
+
+          <div
+            id="message"
+            class="bg-gray-900 p-8 rounded-lg border border-gray-800"
+          >
+            <h3 class="text-xl font-semibold mb-6 text-white">
+              Have a Question?
+            </h3>
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label for="name" class="block text-gray-300 mb-1"
+                  >Full Name *</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-gray-300 mb-1"
+                  >Email *</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
+                />
+              </div>
+              <div>
+                <label for="phone" class="block text-gray-300 mb-1"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
+                />
+              </div>
+              <div>
+                <label for="subject" class="block text-gray-300 mb-1"
+                  >Subject *</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-gray-300 mb-1"
+                  >Message *</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-500 transition duration-300"
+              >
+                SEND MESSAGE
+              </button>
+            </form>
+            <div class="mt-8">
+              <p class="text-gray-300 mb-2">Find me on</p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.linkedin.com/in/ajay-tipte/"
+                  target="_blank"
+                  class="text-yellow-400 hover:text-yellow-500"
+                  ><i class="fab fa-linkedin-in text-2xl"></i
+                ></a>
+                <a
+                  href="https://github.com/Ajaytipte"
+                  target="_blank"
+                  class="text-yellow-400 hover:text-yellow-500"
+                  ><i class="fab fa-github text-2xl"></i
+                ></a>
+                <!-- <a href="#" class="text-yellow-400 hover:text-yellow-500"
+                  ><i class="fab fa-twitter text-2xl"></i
+                ></a> -->
+                <a
+                  href="https://www.instagram.com/theajay__01?igsh=OTlzejdmb2NkaDJ0"
+                  target="_blank"
+                  class="text-yellow-400 hover:text-yellow-500"
+                  ><i class="fab fa-instagram text-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-8 px-4 border-t border-gray-800">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center">
+          <p>&copy; 2025 Ajay Tipte. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script>
+      // Initialize EmailJS with your user ID
+      (function () {
+        emailjs.init("tipteajay@gmail.com"); // Replace with your EmailJS user ID
+      })();
+    </script>
+  </body>
+</html>
