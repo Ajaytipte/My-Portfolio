@@ -628,13 +628,15 @@
                 My Portfolio Website
               </h3>
               <p class="text-gray-400 mb-2">
-                <strong>Tech Stack:</strong> HTML, CSS & JavaScript 
+                <strong>Tech Stack:</strong> HTML, CSS & JavaScript
               </p>
               <p class="text-gray-400">
-                <strong>Description:</strong> I made my own portfolio website to show my projects and skills. It works well on mobile and is easy to use
+                <strong>Description:</strong> I made my own portfolio website to
+                show my projects and skills. It works well on mobile and is easy
+                to use
               </p>
               <a
-                href="https://github.com/Ajaytipte/My-Portfolio"
+                href="https://github.com/Ajaytipte/Prescripto-MERN"
                 target="_blank"
                 class="inline-block px-4 mt-6 py-2 border border-yellow-500 text-yellow-500 rounded hover:bg-yellow-500 hover:text-black transition"
               >
@@ -724,7 +726,9 @@
             <h3 class="text-xl font-semibold mb-6 text-white">
               Have a Question?
             </h3>
+
             <form id="contactForm" class="space-y-4">
+              <!-- Full Name -->
               <div>
                 <label for="name" class="block text-gray-300 mb-1"
                   >Full Name *</label
@@ -737,6 +741,8 @@
                   class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
                 />
               </div>
+
+              <!-- Email -->
               <div>
                 <label for="email" class="block text-gray-300 mb-1"
                   >Email *</label
@@ -749,6 +755,8 @@
                   class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
                 />
               </div>
+
+              <!-- Phone -->
               <div>
                 <label for="phone" class="block text-gray-300 mb-1"
                   >Phone Number</label
@@ -760,6 +768,8 @@
                   class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
                 />
               </div>
+
+              <!-- Subject -->
               <div>
                 <label for="subject" class="block text-gray-300 mb-1"
                   >Subject *</label
@@ -772,6 +782,8 @@
                   class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
                 />
               </div>
+
+              <!-- Message -->
               <div>
                 <label for="message" class="block text-gray-300 mb-1"
                   >Message *</label
@@ -784,6 +796,8 @@
                   class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
                 ></textarea>
               </div>
+
+              <!-- Submit Button -->
               <button
                 type="submit"
                 class="bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-500 transition duration-300"
@@ -791,30 +805,40 @@
                 SEND MESSAGE
               </button>
             </form>
-            <div class="mt-8">
+
+            <!-- 📌 Notification Toast -->
+            <div
+              id="notification"
+              class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded shadow-lg opacity-0 transition duration-500 z-50"
+            >
+              Message sent successfully!
+            </div>
+
+            <!-- 📌 Social Links Section -->
+            <div class="mt-10">
               <p class="text-gray-300 mb-2">Find me on</p>
               <div class="flex space-x-4">
                 <a
                   href="https://www.linkedin.com/in/ajay-tipte/"
                   target="_blank"
                   class="text-yellow-400 hover:text-yellow-500"
-                  ><i class="fab fa-linkedin-in text-2xl"></i
-                ></a>
+                >
+                  <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
                 <a
                   href="https://github.com/Ajaytipte"
                   target="_blank"
                   class="text-yellow-400 hover:text-yellow-500"
-                  ><i class="fab fa-github text-2xl"></i
-                ></a>
-                <!-- <a href="#" class="text-yellow-400 hover:text-yellow-500"
-                  ><i class="fab fa-twitter text-2xl"></i
-                ></a> -->
+                >
+                  <i class="fab fa-github text-2xl"></i>
+                </a>
                 <a
                   href="https://www.instagram.com/theajay__01?igsh=OTlzejdmb2NkaDJ0"
                   target="_blank"
                   class="text-yellow-400 hover:text-yellow-500"
-                  ><i class="fab fa-instagram text-2xl"></i
-                ></a>
+                >
+                  <i class="fab fa-instagram text-2xl"></i>
+                </a>
               </div>
             </div>
           </div>
