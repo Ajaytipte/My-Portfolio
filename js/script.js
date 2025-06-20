@@ -81,10 +81,22 @@ document.addEventListener("DOMContentLoaded", function () {
         message: document.getElementById("user_message").value, // match with textarea's corrected id
       };
 
+      function showNotification(message, bgColor = "bg-green-500") {
+        const notification = document.getElementById("notification");
+        notification.textContent = message;
+        notification.className = `fixed top-4 left-1/2 transform -translate-x-1/2 ${bgColor} text-white px-6 py-3 rounded shadow-lg opacity-100 transition duration-500 z-50`;
+
+        // Hide after 3 seconds
+        setTimeout(() => {
+          notification.classList.remove("opacity-100");
+          notification.classList.add("opacity-0");
+        }, 3000);
+      }
+
       // Send email using EmailJS
       emailjs.send("YOUR_SERVIE_ID", "YOUR_TEMPLATE_ID", formData).then(
         function (response) {
-          alert("Message sent successfully!");
+          showNotification("Message sent successfully!");
           contactForm.reset();
         },
         function (error) {
