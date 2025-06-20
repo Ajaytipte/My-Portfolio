@@ -63,22 +63,26 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, 1000);
 
   // Form submission
+  // Initialize EmailJS with your public key
+  emailjs.init("YOUR_PUBLIC_ID"); // replace this with your actual EmailJS public key
+
   const contactForm = document.getElementById("contactForm");
+
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      // Get form data
+      // Get form data from your contact form
       const formData = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         phone: document.getElementById("phone").value,
         subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
+        message: document.getElementById("user_message").value, // match with textarea's corrected id
       };
 
       // Send email using EmailJS
-      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData).then(
+      emailjs.send("YOUR_SERVIE_ID", "YOUR_TEMPLATE_ID", formData).then(
         function (response) {
           alert("Message sent successfully!");
           contactForm.reset();
